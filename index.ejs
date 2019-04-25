@@ -17,14 +17,15 @@
             <input type="submit" value="Click">
         </p>
     </form> -->
-    <p><table>
-        <% for(var key in data){%>
-        <tr>
-<th><%= key %></th>
-<td><%= data[key] %></td>
-
-        </tr><%} %>
+    <p><table style="width:400px;">
+        <tr><th>dengondesu</th></tr>
+        <tr><td><%= data.msg %></td></tr>
     </table></p>
+    <p> your lasr message:<%= cookie_data %></p>
+        <form method="post" action="/">
+            <p> MESSAGE <input type="text" name  ="msg">
+        <input type="submit" value="soshin">
+    </p>
     </div>
 </body>
 
